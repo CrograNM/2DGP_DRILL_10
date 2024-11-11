@@ -3,7 +3,7 @@ import game_framework
 
 import game_world
 from grass import Grass
-from boy import Boy
+from bird import Bird
 
 # boy = None
 
@@ -24,7 +24,7 @@ def init():
     grass = Grass()
     game_world.add_object(grass, 0)
 
-    boy = Boy()
+    boy = Bird()
     game_world.add_object(boy, 1)
 
 
@@ -35,6 +35,7 @@ def finish():
 
 def update():
     game_world.update()
+    #delay(0.1)
 
 def draw():
     clear_canvas()
